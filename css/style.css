@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    background-color: antiquewhite;
+    
+}
+
+main{
+    font-family: 'Arimo', sans-serif;
+}
+
+/*COMIENZO DEL NAV*/
+.nav{   
+    display: flex;    
+    border-bottom: 2px solid rgb(0, 0, 0);
+    list-style-type: none;
+    background-color: rgb(255, 151, 53);
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav ul{
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.nav ul li{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+     padding-right: 2rem;
+     font-weight: 700;
+    list-style-type: none;
+    display:inline-block;
+}
+
+.nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+.nav img{
+    height:20% ;
+    width: 20%;
+}
+/*FIN DEL NAV*/
+
+
+/*COMIENZO DEL INDEX*/
+.sectionUnoIndex{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+  
+}
+
+.sectionUnoIndex h1{
+    font-size: 100px ;
+    text-align: left;
+    padding-top: 10%;
+    color:black;
+}
+    
+.sectionUnoIndex p{
+    text-align: left;
+    font-size: 23px;
+    font-weight: 500;
+    color: black;
+    padding-right: 40%;
+}
+
+
+.sectionDosIndex {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: "2fr 2fr" ;
+    border-top: 3px solid rgb(0, 0, 0);
+    
+}
+
+.sectionDosIndex iframe{
+   margin-bottom: 7%;
+   margin-top: 7%;
+    margin-left: 10%;
+}
+
+
+.sectionDosIndex p{
+    text-align: center;
+    color:black;
+    font-size: 40px;
+    margin-top: 18%;
+    margin-left: 35%;
+    margin-bottom: 15%;
+}
+/*FIN DEL INDEX*/
+
+/*COMIENZO GALERIA*/
+
+#tituloGaleria{
+    margin-left: 1%;
+    font-size: 60px;
+    margin-top: 3%;
+}
+
+.titulosGaleria{
+    text-align: center;
+    font-size: 45px;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns:30% 30% 30% ;
+    grid-template-rows:   "1fr"
+                       "2fr 2fr"
+                           "1fr"   
+                        "2fr 2fr"
+                           "1fr"                                        
+                       "2fr 2fr";
+    
+}
+
+.imgGalerias{
+   width: 70%;
+    padding: 10%;
+    margin-left: 73%;
+}
+
+
+/*FIN DE GALERIA*/
+
+/*COMIENZO TEXTIL*/
+#tituloTextil{
+    margin-left: 1%;
+    font-size: 60px;
+    margin-top: 3%;
+}
+
+.titulosTextil{
+    text-align: center;
+    font-size: 45px;
+}
+
+.textil{
+    display: grid;
+    grid-template-columns:30% 30% 30% ;
+    grid-template-rows:   "1fr"
+                       "2fr 2fr"
+                           "1fr"   
+                        "2fr 2fr"
+                           "1fr"                                        
+                       "2fr 2fr";
+    
+}
+
+.imgTextil{
+    width: 70%;
+    padding: 10%;
+    margin-left: 73%;
+}
+/*FIN TEXTIL*/
+
+/*COMIENZO NOSOTROS*/
+#tituloNosotros{
+    text-align: center;
+    font-size: 350%;
+    margin-top: 2%;
+}
+
+.sectionUnoNosotros iframe{
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+.sectionUnoNosotros p{
+    text-align: center;
+    color:black;
+    font-size: 160%;
+    margin-top: 1%;
+}
+
+.sectionDosNosotros h2{
+   text-align: center;
+   font-size: 160%;
+   margin-top: 1.2%;
+}
+
+.sectionDosNosotros p{
+    text-align: center;
+    color:black;
+    font-size: 130%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+/*FIN NOSOTROS*/
+
+/*COMIENZO CONTACTO*/
+.sectionUnoContacto{
+    margin-bottom: 2%;
+}
+
+.sectionUnoContacto h1{
+    text-align: center;
+    font-size: 300%;
+    margin-top: 1%;
+}
+
+.sectionUnoContacto p{
+    text-align: center;
+    padding-top: 1%;
+    font-size: 110%;
+}
+
+.sectionDosContacto h1{
+    text-align: center;
+    font-size: 200%;
+    margin-bottom:1% ;
+}
+
+.sectionDosContacto form{
+    text-align: center;
+    font-size:120% ;
+}
+
+.sectionDosContacto{
+    margin-bottom: 4%;
+}
+
+
+input{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+/*FIN CONTACTO*/
+
+/*COMIENZO DEL FOOTER*/
+footer{
+    border-top: 2px solid black;
+    background-color:rgb(255, 151, 53);
+    
+}
+
+.footer p{
+    display: flex;
+    justify-content: center;
+    font-family:'Poppins', sans-serif ;
+    font-size: 20px;
+    color: white;
+
+}
+
+
+#facebook{
+    padding-left: 46%;
+}
+
+#logoWhatsapp{
+    width: 3.2%;
+}
+/*FIN DEL FOOTER*/
+
+/*MEDIAQUERIES*/
+@media only screen and (max-width: 800px){
+        
+        main{
+            min-height: 71.5vh;
+        }
+    
+        .nav img{
+            height: 50%;
+            width: 50%;
+        }
+
+        .sectionUnoIndex h1{
+            font-size: 450%;
+        }    
+
+        .sectionDosIndex{
+            display: grid;
+            grid-template-columns: 80%;
+            grid-template-rows: "1fr"
+                                "1fr";
+        }
+
+        iframe{
+            width: 110%;
+        }
+        
+        .sectionDosIndex p{
+            text-align: center;
+            font-size: 110%;
+        }
+
+        .galeria{
+            row-gap: 40%;
+        }
+
+        .imgGalerias{
+            width: 90%;
+            
+        }
+
+        .textil{
+            row-gap: 40%;
+        }
+
+        .imgTextil{
+            width: 90%;
+        }
+
+        .sectionUnoNosotros iframe{
+            width: 90%;
+            margin-left: 5%;
+            margin-top:2%;
+        }
+        .sectionUnoNosotros p{
+                font-size: 120%;
+                margin-top: 3%;
+                margin-bottom: 3%;
+            }
+
+        .sectionDosNosotros h2{
+                font-size: 180%;
+                margin-bottom: 4%;
+        }    
+
+        .sectionDosNosotros p{
+            margin-bottom: 6%;
+        }
+
+        .sectionUnoContacto{
+            margin-bottom: 5%;
+        }
+
+        .sectionUnoContacto p{
+            font-size: 120%;
+            margin-bottom: 4%;
+        }
+
+        .sectionDosContacto h1{
+            margin-bottom: 8%;
+        }
+
+       .footer p{
+           display: flex;
+           justify-content: center;
+       }
+        
+       #facebook{
+           padding-left: 0%;
+           margin-left:35% ;
+       }
+
+       #logoWhatsapp{
+           width: 13%;
+       }
+}
+/* FIN DE MEDIAQUERIES */
+
+
