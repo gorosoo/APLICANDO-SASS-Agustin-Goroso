@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="icon" href="../img/ArcoLogo.ico">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,79 +22,195 @@
 <body>
 <!--COMIENZO DEL HEADER-->    
     <header>    
-        <nav class="nav">
-            <a href="../index.html">
-            <img src="../img/Arco.png" alt="" >
-            </a>
-            <ul> 
-                <li> 
-                    <a href="../index.html"> HOME</a>
-                </li>
-                <li> 
-                    <a href="galeria.html">GALERIA</a> 
-                </li>
-                <li> 
-                    <a href="maquinaria.html">MAQUINARIA</a>
-                </li>
-                <li> 
-                    <a href="nosotros.html">NOSOTROS</a> 
-                </li>
-                <li> 
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navColor">
+            <nav class="navbar navbar-dark bg-dark" id="navColor">
+                <a class="navbar-brand" href="#">
+                <img src="../img/Arcoo.png" width="15%" height="15%" alt="">
+                </a>
+                </nav>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="maquinaria.html">MAQUINARIA</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                          </li>
+                    </ul>
+                    </div>
+                  </nav>
     </header>
 <!--FIN DEL HEADER-->
+
+<!-- COMIENZO GALERIA -->
+
+
     <main>
         <h1 id="tituloGaleria">Galeria</h1>
         
         <br>
+    <section class="galeria">
         
         <h2 class="titulosGaleria">Etiquetas</h2>
-        
-        <section class="galeria">
-        <img class="imgGalerias" src="../img/ETIQUETAS1.png" alt="">
-        <img class="imgGalerias" src="../img/ETIQUETAS2.png" alt="">
+        <!-- COMIENZO PRIMER CAROUSEL -->
+        <section class="carouselBorder">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="../img/ETIQUETAS1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/ETIQUETAS2.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </section>
-        
+        <!-- FIN PRIMER CAROUSEL -->
+
+        <!-- COMIENZO SEGUNDO CAROUSEL -->
         <h2 class="titulosGaleria">Trabajo en laser</h2>
-        
-        <section class="galeria">
-        <img class="imgGalerias" src="../img/laser1.png" alt="">
-        <img class="imgGalerias" src="../img/laser2.png" alt="">
+
+        <section class="carouselBorder">
+        <div id="carouselExampleControlsdos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="../img/laser1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/laser2.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsdos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsdos" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </section>
+        <!-- FIN SEGUNDO CAROUSEL -->
+
+          <!-- COMIENZO TERCER CAROUSEL -->
+        <h2 class="titulosGaleria">Tarjetas </h2>
         
-        <h2 class="titulosGaleria" >Tarjetas</h2>
-        
-        <section class="galeria">
-        <img class="imgGalerias" src="../img/tarjeta1.png" alt="">
-        <img  class="imgGalerias" src="../img/tarjeta2.png" alt="">
-    </section>
+        <section class="carouselBorder">
+        <div id="carouselExampleControlstres" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="../img/tarjeta1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/tarjeta2.png" class="d-block w-100" id="imgdos"  alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlstres" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlstres" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        </section>
+          <!-- FIN TERCER CAROUSEL -->
+
 
     <h1 id="tituloTextil">Textil</h1>
     
     <br>
+    <section class="textil">
     
     <h2 class="titulosTextil">Gorras</h2>
-    
-    <section class="galeria">
-    <img class="imgTextil" src="../img/gorra1.png" alt="">
-    <img class="imgTextil" src="../img/gorra2.png" alt="">
+    <section class="carouselBorder">
+    <div id="carouselExampleControlscuatro" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <img src="../img/gorra1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/gorra2.png" class="d-block w-100" id="imgdos"  alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlscuatro" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlscuatro" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
     
     <h2 class="titulosTextil">Cuadros</h2>
+    <section class="carouselBorder">
+        <div id="carouselExampleControlscinco" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="../img/cuadros-1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/cuadros2.png" class="d-block w-100" id="imgdos"  alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlscinco" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlscinco" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
     
-    <section class="textil">
-    <img class="imgTextil" src="../img/cuadros-1.png" alt="">
-    <img class="imgTextil" src="../img/cuadros2.png" alt="">
-    </section>
     
     <h2 class="titulosTextil" >Almohadones</h2>
+    <section class="carouselBorder">
+        <div id="carouselExampleControlsseis" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="../img/almohada1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/almohada2.png" class="d-block w-100" id="imgdos"  alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsseis" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsseis" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
     
-    <section class="textil">
-    <img class="imgTextil" src="../img/almohada1.png" alt="">
-    <img  class="imgTextil" src="../img/almohada2.png" alt="">
 </section>
 
 
@@ -101,15 +219,21 @@
 <!--COMIENZO DEL FOOTER-->
 <footer class="footer">
     <p>arcopublicitario@gmail.com</p>
-        <a href="https://www.facebook.com/arcopublicitario/photos/?ref=page_internal">
-           <img id="facebook" src="../img/LogoFacebookk.png" alt="logo facebook">
-        </a>
+        
+     <a href="https://www.instagram.com/arcopublicitario/">
+         <i class="bi bi-instagram"></i>
+     </a>
 
-        <a href="https://www.instagram.com/arcopublicitario/?hl=es-la">
-           <img  src="../img/Instagramlogo2.png" alt="logo instagram">
-        </a>
-        <img  id="logoWhatsapp" src="../img/whatsapp.png" alt="logo whatsapp">
-</footer>
+     <a href="">
+         <i class="bi bi-facebook"></i>
+     </a>
+
+     <a href="">
+         <i class="bi bi-whatsapp"></i>
+     </a>
+
+    
+ </footer>
 <!--FIN DEL FOOTER-->
 </body>
 </html>
