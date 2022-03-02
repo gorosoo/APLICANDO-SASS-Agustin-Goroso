@@ -160,31 +160,12 @@ main{
     margin-bottom: 8%;
     text-decoration: underline ;
 }
-
-.maquinaria{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 33% 33% 33%;
-    align-items: center;
-    justify-items: center;
-    row-gap: 30px;
-    
-}
-
-.imgMaquinaria{
-    width: 40%;
+ 
+.img{
+    width: 460px;
+    height: 400px;
+    margin-bottom: 8%;
     border: 2px solid black;
-    transition: all 1.5s;
-}
-
-.imgMaquinaria:hover{
-    width: 45%;
-}
-
-.pMaquinaria{
-    font-size: 25px;
-    padding-right: 30%;
-    transition: all 1.5s;
 }
 
 /* FIN MAQUINARIA */
@@ -197,17 +178,13 @@ main{
     text-decoration: underline;
 }
 
-.sectionUnoNosotros iframe{
-    margin-left: 30%;
-    margin-top: 2%;
+
+.card{
+    text-align: center;
+    margin-left:32% ;
 }
 
-.sectionUnoNosotros p{
-    text-align: center;
-    color:black;
-    font-size: 160%;
-    margin-top: 1%;
-}
+
 
 .sectionDosNosotros h2{
    text-align: center;
@@ -221,6 +198,11 @@ main{
     font-size: 130%;
     margin-bottom: 2%;
     margin-top: 1%;
+}
+
+.sectionDosNosotros ul{
+    list-style: none;
+    list-style-type: none;
 }
 /*FIN NOSOTROS*/
 
@@ -242,26 +224,15 @@ main{
     font-size: 110%;
 }
 
-.sectionDosContacto h1{
+.sectionDosContacto h2{
     text-align: center;
-    font-size: 200%;
-    margin-bottom:1% ;
 }
 
-.sectionDosContacto form{
-    text-align: center;
-    font-size:120% ;
+.btn{
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
-.sectionDosContacto{
-    margin-bottom: 4%;
-}
-
-
-input{
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-}
 /*FIN CONTACTO*/
 
 /*COMIENZO DEL FOOTER*/
