@@ -1,0 +1,120 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    background-image:linear-gradient(to bottom, rgb(255, 151, 53),rgb(246, 215, 184),rgb(255, 151, 53));
+    font-weight: 600;
+}
+
+
+main{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 800px){
+        
+    main{
+        min-height: 71.5vh;
+    }
+
+    .banner{
+        height: 300px;
+    }
+
+
+    .sectionUnoIndex h1{
+        font-size: 200%;
+    }    
+
+    .sectionUnoIndex p{
+        font-size: 93%;
+        margin-top: 30%;
+        margin-left: 2%;
+
+    }
+
+    .sectionDosIndex{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: "1fr"
+                            "1fr";
+    }
+
+    iframe{
+        width: 110%;
+    }
+    
+    .sectionDosIndex p{
+        text-align: center;
+        font-size: 147%;
+    }
+
+    .galeria{
+        row-gap: 40%;
+    }
+
+    .imgGalerias{
+        width: 90%;
+        
+    }
+
+    .textil{
+        row-gap: 40%;
+    }
+
+    .imgTextil{
+        width: 90%;
+    }
+
+    .sectionUnoNosotros iframe{
+        width: 90%;
+        margin-left: 5%;
+        margin-top:2%;
+    }
+    .sectionUnoNosotros p{
+            font-size: 120%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+    .sectionDosNosotros h2{
+            font-size: 180%;
+            margin-bottom: 4%;
+    }    
+
+    .sectionDosNosotros p{
+        margin-bottom: 6%;
+    }
+
+    .sectionUnoContacto{
+        margin-bottom: 5%;
+    }
+
+    .sectionUnoContacto p{
+        font-size: 120%;
+        margin-bottom: 4%;
+    }
+
+    .sectionDosContacto h1{
+        margin-bottom: 8%;
+    }
+
+   .footer p{
+       display: flex;
+       justify-content: center;
+   }
+    
+   #facebook{
+       padding-left: 0%;
+       margin-left:35% ;
+   }
+
+   #logoWhatsapp{
+       width: 13%;
+   }
+}

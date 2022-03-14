@@ -1,0 +1,51 @@
+
+.banner{
+    width: 100%;
+    opacity: 0.7;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.sectionUnoIndex h1{
+    font-size: 100px ;
+    text-align: left;
+    color:black;
+    z-index: 10000;
+    position: absolute;
+    margin-top: 18%;
+}
+    
+.sectionUnoIndex p{
+    text-align: left;
+    font-size: 23px;
+    font-weight: 700;
+    color: black;
+    z-index: 10000;
+    position: absolute;
+    padding-right: 40%;
+    margin-top: 24%;
+    opacity: 1;
+}
+
+
+.sectionDosIndex {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: "2fr 2fr" ;
+    
+}
+
+.sectionDosIndex iframe{
+   margin-bottom: 7%;
+   margin-top: 7%;
+    margin-left: 10%;
+}
+
+
+.sectionDosIndex p{
+    text-align: center;
+    color:black;
+    font-size: 40px;
+    margin-top: 18%;
+    margin-left: 35%;
+    margin-bottom: 15%;
+}
