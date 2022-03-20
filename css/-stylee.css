@@ -61,7 +61,7 @@
   margin-top: 4%;
   margin-bottom: 4%; }
 
-.galeria {
+.galeria, .textil {
   display: grid;
   grid-template-columns: 30%;
   grid-template-rows: "1fr" "2fr" "1fr"    "2fr" "1fr"                                         "2fr";
@@ -79,20 +79,14 @@
   margin-left: 1%;
   font-size: 60px;
   margin-top: 3%;
-  text-decoration: underline;
-  text-align: start; }
+  text-decoration: underline; }
 
 .titulosTextil {
   text-align: center;
-  font-size: 45px; }
+  font-size: 45px;
+  margin-top: 4%;
+  margin-bottom: 4%; }
 
-.textil {
-  display: grid;
-  grid-template-columns: 30%;
-  grid-template-rows: "1fr" "2fr" "1fr"    "2fr" "1fr"                                         "2fr";
-  justify-content: center; }
-
-/*FIN GALERIA*/
 #tituloMaquinaria {
   font-size: 60px;
   text-align: center;
@@ -106,18 +100,23 @@
   margin-bottom: 8%;
   border: 2px solid black; }
 
-#tituloNosotros {
+.tituloNosotros, .sectionDosNosotros h2 {
   text-align: center;
   font-size: 350%;
   margin-top: 2%;
   text-decoration: underline; }
 
-.card {
+.sectionUnoNosotros iframe {
+  margin-left: 30%;
+  margin-top: 2%; }
+
+.sectionUnoNosotros p {
   text-align: center;
-  margin-left: 32%; }
+  color: black;
+  font-size: 160%;
+  margin-top: 1%; }
 
 .sectionDosNosotros h2 {
-  text-align: center;
   font-size: 160%;
   margin-top: 1.2%; }
 
@@ -138,8 +137,7 @@
 .sectionUnoContacto h1 {
   text-align: center;
   font-size: 300%;
-  margin-top: 1%;
-  text-decoration: underline; }
+  margin-top: 1%; }
 
 .sectionUnoContacto p {
   text-align: center;
@@ -202,7 +200,7 @@ main {
   .sectionDosIndex p {
     text-align: center;
     font-size: 147%; }
-  .galeria {
+  .galeria, .textil {
     row-gap: 40%; }
   .imgGalerias {
     width: 90%; }

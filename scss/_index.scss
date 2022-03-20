@@ -18,7 +18,7 @@
     text-align: left;
     font-size: 23px;
     font-weight: 700;
-    color: black;
+    color: map-get($map: $colores, $key:primario );
     z-index: 10000;
     position: absolute;
     padding-right: 40%;
@@ -43,7 +43,7 @@
 
 .sectionDosIndex p{
     text-align: center;
-    color:black;
+    color: map-get($map: $colores, $key:primario );
     font-size: 40px;
     margin-top: 18%;
     margin-left: 35%;

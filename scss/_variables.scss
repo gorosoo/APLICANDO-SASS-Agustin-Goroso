@@ -10,11 +10,18 @@ body{
     font-weight: 600;
 }
 
-
 main{
     font-family: 'Lora', serif;
     font-weight: 400;
 }
+
+$colores: (
+    primario:black
+    secundario:white
+    footer-hover:orange
+    bg:#27252a
+);
+
 
 @media only screen and (max-width: 800px){
         

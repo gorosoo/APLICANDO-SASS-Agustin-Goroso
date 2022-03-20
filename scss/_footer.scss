@@ -1,21 +1,21 @@
 footer{
-    background-color: #27252a ;
+    background-color:map-get($map: $colores, $key:bg );
     text-align: center;
     
 }
 
 .footer p{
-    color: white;
+    color:map-get($map: $colores, $key:secundario );
     font-size: 125%;
     padding-top: 1%;    
 }
 
 i{
-    color: white;
+    color:map-get($map: $colores, $key:secundario );
     font-size: 40px;
     padding-left: 1%;
 }
 
 i:hover{
-    color: orange;
+    color: map-get($map:$colores , $key:footer-hover)
 }

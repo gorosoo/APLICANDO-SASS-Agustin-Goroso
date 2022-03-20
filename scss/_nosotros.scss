@@ -1,4 +1,4 @@
-#tituloNosotros{
+.tituloNosotros{
     text-align: center;
     font-size: 350%;
     margin-top: 2%;
@@ -6,17 +6,23 @@
 }
 
 
-.card{
-    text-align: center;
-    margin-left:32% ;
+.sectionUnoNosotros iframe{
+    margin-left: 30%;
+    margin-top: 2%;
 }
 
-
+.sectionUnoNosotros p{
+    text-align: center;
+    color:black;
+    font-size: 160%;
+    margin-top: 1%;
+}
 
 .sectionDosNosotros h2{
-   text-align: center;
+    @extend .tituloNosotros;
    font-size: 160%;
    margin-top: 1.2%;
+  
 }
 
 .sectionDosNosotros p{

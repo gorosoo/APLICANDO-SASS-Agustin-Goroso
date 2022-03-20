@@ -2,17 +2,18 @@
     margin-bottom: 2%;
 }
 
-.sectionUnoContacto h1{
+@mixin estiloContacto {
     text-align: center;
-    font-size: 300%;
+    font-size: $tamañoLetra;
     margin-top: 1%;
-    text-decoration: underline;
+}
+
+.sectionUnoContacto h1{
+    @include estiloContacto(300%)
 }
 
 .sectionUnoContacto p{
-    text-align: center;
-    padding-top: 1%;
-    font-size: 110%;
+    @include estiloContacto(110%)
 }
 
 .sectionDosContacto h2{
