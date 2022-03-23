@@ -1,11 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 .navbar-nav {
   margin-left: 69%;
-  font-family: 'Lora', serif;
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif; }
 
 .nav-item {
-  padding-left: 6%; }
+  padding-left: 3%; }
 
 .banner {
   width: 100%;
@@ -72,8 +72,12 @@
   margin-bottom: 6%;
   margin-top: 6%; }
 
+.imgGaleria {
+  width: 40%; }
+
 #imgdos {
-  height: 570px; }
+  height: 570px;
+  width: 40%; }
 
 #tituloTextil {
   margin-left: 1%;
@@ -94,11 +98,16 @@
   margin-bottom: 6%;
   text-decoration: underline; }
 
-.img {
-  width: 460px;
-  height: 400px;
-  margin-bottom: 8%;
-  border: 2px solid black; }
+.imgMaquinaria {
+  width: 100%;
+  height: 65%; }
+
+.card {
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.card-group {
+  margin-bottom: 3%; }
 
 .tituloNosotros, .sectionDosNosotros h2 {
   text-align: center;
@@ -141,8 +150,8 @@
 
 .sectionUnoContacto p {
   text-align: center;
-  padding-top: 1%;
-  font-size: 110%; }
+  font: size 110%;
+  margin-top: 1%; }
 
 .sectionDosContacto h2 {
   text-align: center; }
@@ -152,7 +161,7 @@
   margin-bottom: 1%; }
 
 footer {
-  background-color: #27252a;
+  background-color: #2d2c2d;
   text-align: center; }
 
 .footer p {
@@ -177,8 +186,8 @@ body {
   font-weight: 600; }
 
 main {
-  font-family: 'Lora', serif;
-  font-weight: 400; }
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300; }
 
 @media only screen and (max-width: 800px) {
   main {
@@ -193,21 +202,34 @@ main {
     margin-left: 2%; }
   .sectionDosIndex {
     display: grid;
-    grid-template-columns: 80%;
+    grid-template-columns: 77%;
     grid-template-rows: "1fr" "1fr"; }
   iframe {
-    width: 110%; }
+    width: 100%;
+    margin-left: 0%; }
   .sectionDosIndex p {
     text-align: center;
     font-size: 147%; }
   .galeria, .textil {
-    row-gap: 40%; }
-  .imgGalerias {
-    width: 90%; }
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: "1fr" "1fr" "1fr"    "1fr" "1fr"                                         "1fr";
+    justify-content: center;
+    row-gap: 0%; }
+  #imgdos {
+    width: 269px;
+    height: 269px; }
   .textil {
-    row-gap: 40%; }
-  .imgTextil {
-    width: 90%; }
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: "1fr" "1fr" "1fr"    "1fr" "1fr"                                         "1fr";
+    justify-content: center;
+    row-gap: 0%; }
+  .img {
+    width: 70%;
+    margin-bottom: 0%;
+    border: 2px solid black;
+    height: 70%; }
   .sectionUnoNosotros iframe {
     width: 90%;
     margin-left: 5%;
@@ -230,9 +252,24 @@ main {
     margin-bottom: 8%; }
   .footer p {
     display: flex;
-    justify-content: center; }
-  #facebook {
-    padding-left: 0%;
-    margin-left: 35%; }
-  #logoWhatsapp {
-    width: 13%; } }
+    justify-content: center; } }
+
+@media only screen and (max-width: 1024px) {
+  #navbarNavAltMarkup {
+    margin-right: 30%; }
+  .sectionUnoIndex p {
+    margin-top: 30%; }
+  .sectionDosIndex {
+    display: grid;
+    grid-template-columns: 74%;
+    grid-template-rows: "1fr" "1fr"; }
+  .sectionDosIndex iframe {
+    margin-left: 20%;
+    margin-bottom: 2%; }
+  #imgdos {
+    width: 303px;
+    height: 303px; }
+  .sectionUnoNosotros iframe {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%; } }

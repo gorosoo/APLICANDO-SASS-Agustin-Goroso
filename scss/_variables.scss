@@ -11,16 +11,10 @@ body{
 }
 
 main{
-    font-family: 'Lora', serif;
-    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
 }
 
-$colores: (
-    primario:black
-    secundario:white
-    footer-hover:orange
-    bg:#27252a
-);
 
 
 @media only screen and (max-width: 800px){
@@ -47,13 +41,14 @@ $colores: (
 
     .sectionDosIndex{
         display: grid;
-        grid-template-columns: 80%;
+        grid-template-columns: 77%;
         grid-template-rows: "1fr"
                             "1fr";
     }
 
     iframe{
-        width: 110%;
+        width: 100%;
+        margin-left: 0%;
     }
     
     .sectionDosIndex p{
@@ -62,21 +57,43 @@ $colores: (
     }
 
     .galeria{
-        row-gap: 40%;
+        display: grid;
+        grid-template-columns:70%;
+        grid-template-rows:     "1fr"
+                                "1fr"
+                                "1fr"   
+                                "1fr"
+                                "1fr"                                        
+                                "1fr";
+        justify-content: center;
+        row-gap: 0%;   
     }
-
-    .imgGalerias{
-        width: 90%;
-        
+    
+    #imgdos{
+        width: 269px;
+        height: 269px;
     }
 
     .textil{
-        row-gap: 40%;
+        display: grid;
+        grid-template-columns:70%;
+        grid-template-rows:     "1fr"
+                                "1fr"
+                                "1fr"   
+                                "1fr"
+                                "1fr"                                        
+                                "1fr";
+        justify-content: center;
+        row-gap: 0%;   
     }
 
-    .imgTextil{
-        width: 90%;
+    .img{
+        width: 70%;
+        margin-bottom: 0%;
+        border: 2px solid black;
+        height: 70%;
     }
+
 
     .sectionUnoNosotros iframe{
         width: 90%;
@@ -115,13 +132,41 @@ $colores: (
        display: flex;
        justify-content: center;
    }
-    
-   #facebook{
-       padding-left: 0%;
-       margin-left:35% ;
-   }
 
-   #logoWhatsapp{
-       width: 13%;
-   }
+}
+
+@media only screen and (max-width: 1024px){
+    #navbarNavAltMarkup{
+        margin-right: 30%;
+    }
+
+    .sectionUnoIndex p {
+        margin-top: 30%;
+    }
+
+    .sectionDosIndex{
+        display: grid;
+        grid-template-columns: 74%;
+        grid-template-rows: "1fr"
+                            "1fr";
+    }
+
+    .sectionDosIndex iframe{
+        margin-left: 20%;
+        margin-bottom: 2%;
+    }
+
+
+    #imgdos{
+        width: 303px;
+        height: 303px;
+    }
+
+    .sectionUnoNosotros iframe{
+        width: 90%;
+        margin-left: 5%;
+        margin-top:2%;
+    }
+
+
 }
